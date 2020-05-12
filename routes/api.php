@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/login', 'Api\Auth\LoginController@login');
 Route::post('/register', 'Api\Auth\RegisterController@register');
+
+Route::apiResource('seedproducers', 'SeedProducerController');
